@@ -39,13 +39,6 @@ export default function Snacks() {
     fetchSnacksdata();
   }, []);
 
-  // useEffect(() => {
-  //   axios
-  //     .get(process.env.REACT_APP_API_URL)
-  //     .then((response) => setSnacks(response.data))
-  //     .catch((c) => console.warn("catch", c));
-  // }, []);
-
   console.log(snacks);
 
   let unknown =
