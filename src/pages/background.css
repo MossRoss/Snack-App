@@ -1,0 +1,35 @@
+body {
+  background-image: url("https://img.freepik.com/free-vector/abstract-watercolor-pastel-background_87374-97.jpg?w=1060&t=st=1691171332~exp=1691171932~hmac=ebdbd02678ea5c1d626b0ca6996aa5f0a01cc287c733d5ebbbf4e3b77a8863a0");
+  background-size: auto;
+  background-repeat: repeat;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.list-group-mine .list-group-item {
+  background-color: #292b2c;
+  border-top: 1px solid #3f4244;
+  border-left-color: #55595b;
+  border-right-color: #292b2c;
+  text-align: right;
+  font-weight: 600;
+  color: aliceblue;
+}
+
+.list-group-mine .list-group-item:hover {
+  background-color: #515557;
+  color: aliceblue;
+}
+
+.list-group-mine .list-group-item a:visited {
+  background-color: #515557;
+  color: aliceblue;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "coffee";
+  src: local("CoffeeHealing"), url("../../Fonts/CoffeeHealing.ttf");
+  text-align: center;
+}
