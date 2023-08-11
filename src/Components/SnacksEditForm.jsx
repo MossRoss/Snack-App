@@ -42,11 +42,11 @@ function SnackEditForm() {
 
   useEffect(() => {
     updateSnack();
-  }, []);
+  }, [id]);
 
   const updateSnack = () => {
     axios
-      .put(`${API}/snacks/${id}`, snack)
+      .put(`${API}/snacks/${id}/`, snack)
       .then((result) => {
         setSnack(result.data);
         navigate(`/snacks/${id}`);

@@ -16,6 +16,8 @@ import ListGroup from "react-bootstrap/ListGroup";
 import solid from "../assets/heart-solid.png";
 import hollow from "../assets/heart-regular.png";
 
+import { getAllSnacks } from "./Api/API";
+
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const API = process.env.REACT_APP_API_URL;
@@ -27,10 +29,8 @@ export default function Snacks() {
 
   async function fetchSnacksdata() {
     try {
-      let result = await axios.get(`${API}/snacks`);
-      console.log(result);
+      let result = await getAllSnacks();
       setSnacks(result.data);
-      return result;
     } catch (e) {
       console.log(e);
     }
@@ -38,8 +38,6 @@ export default function Snacks() {
   useEffect(() => {
     fetchSnacksdata();
   }, []);
-
-  console.log(snacks);
 
   let unknown =
     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCPyAQgGi69652_JD7aRaOTtQWPvKeQST7Yg&usqp=CAU";

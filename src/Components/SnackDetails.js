@@ -64,7 +64,7 @@ function SnackDetails() {
           <strong>Is Healthy?:</strong>{" "}
           {snack.is_healthy ? (
             <img
-              style={{ width: "25px", height: "25px" }}
+              style={{ width: "15px", height: "15px" }}
               src={Solid}
               alt="This is a Healthy Snack"
             ></img>
