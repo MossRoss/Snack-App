@@ -22,7 +22,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 const API = process.env.REACT_APP_API_URL;
 
-export default function Snacks() {
+function Snacks() {
   const [snacks, setSnacks] = useState([]);
   const [currSnacks, setCurrSnacks] = useState([]);
   const [search, setSearch] = useState([]);
@@ -156,3 +156,5 @@ export default function Snacks() {
     </>
   );
 }
+
+export default Snacks;
